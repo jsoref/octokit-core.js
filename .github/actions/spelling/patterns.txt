@@ -1,0 +1,9 @@
+4feornbt361
+# 64 base64 pem files as multiline strings
+^[0-9a-zA-Z+/=]{64}$
+^[0-9a-zA-Z+/=]{10,64}=$
+# BEARER / jwt
+^\s*"[0-9a-zA-Z+./=_-]+";$
+# URL escaped characters
+\%[0-9A-F]{2}
+https://runkit.com/gr2m/reproducable-jwt
